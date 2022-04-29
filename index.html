@@ -3,11 +3,24 @@
         <title>Porfolio</title>
         <style>
             body{
-                background-color: rgb(209, 73, 209);                
+                background-color: rgb(70, 80, 167);
+                margin-top: 10px;
+                margin-bottom: 10px;
+                margin-left: 10px;
+                margin-right: 10px;             
+            }
+            h1{
+                color: white;
+                font-style: oblique;
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: xx-large;
+            }
+            h2{
+                font-size: medium;
             }
             .container-one{
                 display: flex;
-                min-height: 30vh;
                 font-family: Arial, sans-serif;
                 z-index: 2;              
             }
@@ -124,15 +137,44 @@
                 width: 150px;
                 height: 150px;
                 border-radius: 70px;
-                margin-top: 30px;
+                margin-top: -100px;
                 margin-right: 50px;
                 object-fit: fill;
                 box-shadow: 2px 3px 7px rgba(0, 0, 0.25);
                 transition: box-shadow .3s;
             }
+            #skills-img:hover{
+                box-shadow: 0px 5px 20px rgba(0, 0, 0.35);
+            }
+            .sub-container-three{
+                width: 45%;
+                height: fit-content;
+                background-color: rgb(118, 193, 236);
+                color: rgb(133, 7, 7);
+                border-style: dashed;
+                z-index: 1;
+                overflow: visible;
+                position: absolute;
+                padding-left: 10px;
+                margin-top: 100px;
+                margin-left: -20px;
+                border-radius: 17px;
+                font-style: italic;
+                font-weight: bold; 
+                text-overflow: clip;    
+                display: none;        
+                transform: translateX(150px);
+                transition: transform .3s;
+            }
+            #skills-img:hover .sub-container-three{
+                transform: translateX(100px);
+                display: block;
+            }
+
         </style>
     </head>
     <body>
+        <h1>Samreen Saba</h1>
         <div class="container-one">
             <div id="image">
                 <div id="name">Samreen Saba</div>
@@ -155,10 +197,28 @@
             <div id="container-three")>
                 <div id="skills-img">
                     <div class="sub-container-three">
-
+                        <h2>Professional skills</h2>
+                        <ul>
+                            <li>Languages: Python, HTML, CSS</li>
+                            <li>Office 365</li>
+                            <li>Machine Learning</li>
+                            <li>GCP</li>
+                            <li>Strong Communicatoin skills</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            
+            <div id="container-four")>
+                <div id="edu-img">
+                    <div class="sub-container-four">
+                        <ul>
+                            <li>Master in Computer Science, 2022 University of East London, London, UK</li>
+                            <li>Bachelor of Science, Mathematics, Computer Science, 2013 Osmania University - Hyderabad, India </li>
+                            <li>A-Levels, Mathematics, Physics and Chemistry, 2010 State Board of Intermediate Education - Hyderabad, India</li>
+                            <li>GCSE, 2008 Secondary School Certificate - Hyderabad, India</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
     </body>
 </html>
