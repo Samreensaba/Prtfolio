@@ -35,26 +35,100 @@
                 transform: translateX(-200px);
                 transition: transform .3s;
                 transition-timing-function: ease-in;
+                display: none;
             }
             #image:hover #name{
                 transform: translateX(0px);
+                display: block;
             }
-            #sub-container{
+            .sub-container{
                 width: 45%;
                 height: fit-content;
                 background-color: rgb(118, 193, 236);
-                color: rgb(240, 14, 14);
+                color: rgb(133, 7, 7);
                 border-style: dashed;
                 z-index: 1;
+                overflow: visible;
+                position: absolute;
                 padding-left: 10px;
+                margin-top: 70px;
+                margin-left: 50px;
                 border-radius: 17px;
                 font-style: italic;
-                font-weight: bold;                
-                transform: translateX(50px);
+                font-weight: bold; 
+                text-overflow: clip;
+                display: none;               
+                transform: translateX(100px);
                 transition: transform .3s;                
             }
-            #image:hover #sub-container{
-                transform: translateX(-50px);
+            #image:hover .sub-container{
+                transform: translateX(-100px);
+                display: block;
+            }
+            #container-two{
+                display: flex;
+                min-height: 30vh;
+                font-family: Arial, sans-serif;
+                z-index: 2;
+                margin-left: 1000px;
+            } 
+            #exp-img{
+                background-image: url("exp.jpg");
+                background-size:cover;
+                width: 150px;
+                height: 150px;
+                border-radius: 70px;
+                margin-top: 30px;
+                margin-right: 50px;
+                object-fit: fill;
+                box-shadow: 2px 3px 7px rgba(0, 0, 0.25);
+                transition: box-shadow .3s;
+            }
+            #exp-img:hover{
+                box-shadow: 0px 5px 20px rgba(0, 0, 0.35);
+            }
+            .sub-container-two{
+                width: 45%;
+                height: fit-content;
+                background-color: rgb(118, 193, 236);
+                color: rgb(133, 7, 7);
+                border-style: dashed;
+                z-index: 1;
+                overflow: visible;
+                position: absolute;
+                padding-left: 10px;
+                margin-top: 100px;
+                margin-left: -500px;
+                border-radius: 17px;
+                font-style: italic;
+                font-weight: bold; 
+                text-overflow: clip;    
+                display: none;           
+                transform: translateX(200px);
+                transition: transform .3s;
+            }
+            #exp-img:hover .sub-container-two{
+                transform: translateX(-100px);
+                display: block;
+            }
+            #container-three{
+                display: flex;
+                min-height: 30vh;
+                font-family: Arial, sans-serif;
+                z-index: 2;
+                margin-bottom: 1000px;
+            }
+            #skills-img{
+                background-image: url("skills.jpg");
+                background-size:cover;
+                width: 150px;
+                height: 150px;
+                border-radius: 70px;
+                margin-top: 30px;
+                margin-right: 50px;
+                object-fit: fill;
+                box-shadow: 2px 3px 7px rgba(0, 0, 0.25);
+                transition: box-shadow .3s;
             }
         </style>
     </head>
@@ -62,11 +136,28 @@
         <div class="container-one">
             <div id="image">
                 <div id="name">Samreen Saba</div>
-                <div id="sub-container">
+                <div class="sub-container">
                     <p>Graduate in Msc. Computer Science with a view to enhance my knowledge at Bachelor level. Keen to apply my skills in a real-life setting. I secured employment at HSBC as information Security Analyst. highly organised and resourceful, keento take on new challenges. looking for a position as web developer in an organisation that utilizes my previous experience along with the latest experience gained from my academics. I have passion to improve my career, increase my skills and become a successful person. I am always interested to learn, develop skills, accept challenges and think differently to bring innovation. I hope my education knowledge and work experience will make me an asset to any organisation.</p>
                 </div>
             </div>
-            
+            </div>
+            <div id="container-two">
+                <div id="exp-img">
+                    <div class="sub-container-two">
+                        <ul>
+                            <li>Intern Machine Learning Assistant, 05/2021 to 01/2022 University of East London, UK</li>
+                            <li>Information Security Analyst, 01/2017 to 12/2019 HSBC, India</li>
+                            <li>IT Specialist, 09/2015 to 11/2016 Diebold Nixdorf, USA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="container-three")>
+                <div id="skills-img">
+                    <div class="sub-container-three">
+
+                    </div>
+                </div>
             </div>
             
     </body>
